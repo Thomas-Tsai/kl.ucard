@@ -219,9 +219,12 @@ class UpdateData():
 
 def read_location():
     #f = codecs.open("test", "r", "utf-8")
-    f = codecs.open('/boot/location', 'r', "utf-8-sig")
-    location_str = f.read()
-    
+    try:
+        f = codecs.open('/boot/location', 'r', "utf-8-sig")
+        location_str = f.read()
+    except: 
+        location_str = "location?"
+
     location_str = location_str.rstrip()
 
     url_location_str = urllib.quote(location_str.encode('utf-8'))
