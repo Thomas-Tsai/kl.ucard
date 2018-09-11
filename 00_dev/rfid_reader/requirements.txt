@@ -1,0 +1,11 @@
+certifi==2018.8.24
+chardet==3.0.4
+freeze==1.0.10
+idna==2.7
+pycairo==1.17.1
+PyGObject==3.30.0
+pyscard==1.9.7
+qrcode==6.0
+requests==2.19.1
+six==1.11.0
+urllib3==1.23

@@ -1,9 +1,8 @@
-# python modules
-python-requests
-python-pyscard
-python-sqlite
+# python 2.7
+apt-get install  swig libpcsclite-dev libgirepository1.0-dev libcairo2-dev 
+pip install -r requirements.txt
 
-# services
+# services // finale we change to rfid reader to keyboard device
 pcscd
 
 # debug tools
